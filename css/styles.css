@@ -83,10 +83,28 @@ body {
 	}
 }
 
-.col-sm:not(:last-child) {
-	border-right: solid black;
-}
-
 .heading {
 	font-weight: 700;
+}
+
+@media only screen and (max-width: 700px) {
+	.roster h3 {
+		margin-left: 0px;
+	}
+
+	.roster p {
+		margin-left: 0px;
+	}
+}
+
+@media only screen and (max-width: 825px) {
+	.header {
+		margin: 50px 50px 50px 50px;
+	}
+}
+
+@media only screen and (min-width: 574px) {
+	.col-sm:not(:last-child) {
+		border-right: solid black;
+	}
 }
