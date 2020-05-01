@@ -1,4 +1,4 @@
-var settings = {
+function getSeason() { var settings = {
 	"async": true,
 	"crossDomain": true,
 	"url": "https://api-nba-v1.p.rapidapi.com/games/seasonYear/2015",
