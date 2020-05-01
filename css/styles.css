@@ -39,7 +39,7 @@ body {
 
 .roster {
 	width: 100%;
-	background-image: url(img/chicagobulls.jpg);
+	background-image: url(../img/chicagobulls.jpg);
 	background-position: 20% 30%;
 	background-size: cover;
 	background-repeat: no-repeat;
