@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel='stylesheet' href='css/styles.css'>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+	</script>
+	<script type="module" src="js/roster.js"></script>
+	<meta charset="UTF-8">
+	<title>Current Roster</title>
+</head>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+				<a class="nav-link nav-red" style="color: #B42729;" href="index.html">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link nav-red" style="color: #B42729;" href="bulls2015.html">2015-16 Season<span class="sr-only"></span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link nav-red" style="color: #B42729;" href="bulls2016.html">2016-17 Season<span class="sr-only"></span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link nav-red" style="color: #B42729;" href="bulls2017.html">2017-18 Season<span class="sr-only"></span></a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" style="color: #B42729" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					2018-19 Season
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: white;">
+					<a class="nav-link nav-red" style="color: #B42729;" href="bulls2018.html">2018-19 Season<span class="sr-only"></span></a>
+					<a class="nav-link nav-red" style="color: #B42729;" href="bulls2018-standings.html">2018-19 Standings<span class="sr-only"></span></a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" style="color: #B42729" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					2019-20 Season
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: white;">
+					<a class="nav-link nav-red" style="color: #B42729;" href="bulls2019.html">2019-20 Season<span class="sr-only"></span></a>
+					<a class="nav-link nav-red" style="color: #B42729;" href="bulls2019-standings.html">2019-20 Standings<span class="sr-only"></span></a>
+				</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link nav-red" style="color: black;" href="current-roster.html">Current Roster<span class="sr-only"></span></a>
+			</li>
+		</ul>
+		<img width="50px" height="50px" style="float: right;" src="https://upload.wikimedia.org/wikipedia/fr/thumb/d/d1/Bulls_de_Chicago_logo.svg/1200px-Bulls_de_Chicago_logo.svg.png">
+	</div>
+</nav>
+<body>
+<div class="standings-container">
+<h3 class="standings-title">2019-20 Chicago Bulls Roster</h3>
+</div>
+<div class="standings">
+	<div class="row">
+		<div class="col-sm">
+			<div class="heading" id="name">Name</div>
+		</div>
+		<div class="col-sm">
+			<div class="heading" id="number">Number</div>
+		</div>
+		<div class="col-sm">
+			<div class="heading" id="position">Position</div>
+		</div>
+		<div class="col-sm">
+			<div class="heading" id="college">College</div>
+		</div>
+		<div class="col-sm">
+			<div class="heading" id="dob">Date of Birth</div>
+		</div>
+		<div class="col-sm">
+			<div class="heading" id="years-pro">Years Pro</div>
+		</div>
+		<div class="col-sm">
+			<div class="heading" id="weight">Weight</div>
+		</div>
+		<div class="col-sm">
+			<div class="heading" id="height">Height</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="name0"></div>
+		</div>
+		<div class="col-sm">
+			<div id="number0"></div>
+		</div>
+		<div class="col-sm">
+			<div id="position0"></div>
+		</div>
+		<div class="col-sm">
+			<div id="college0"></div>
+		</div>
+		<div class="col-sm">
+			<div id="dob0"></div>
+		</div>
+		<div class="col-sm">
+			<div id="years-pro0"></div>
+		</div>
+		<div class="col-sm">
+			<div id="weight0"></div>
+		</div>
+		<div class="col-sm">
+			<div id="height0"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="name1"></div>
+		</div>
+		<div class="col-sm">
+			<div id="number1"></div>
+		</div>
+		<div class="col-sm">
+			<div id="position1"></div>
+		</div>
+		<div class="col-sm">
+			<div id="college1"></div>
+		</div>
+		<div class="col-sm">
+			<div id="dob1"></div>
+		</div>
+		<div class="col-sm">
+			<div id="years-pro1"></div>
+		</div>
+		<div class="col-sm">
+			<div id="weight1"></div>
+		</div>
+		<div class="col-sm">
+			<div id="height1"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="name2"></div>
+		</div>
+		<div class="col-sm">
+			<div id="number2"></div>
+		</div>
+		<div class="col-sm">
+			<div id="position2"></div>
+		</div>
+		<div class="col-sm">
+			<div id="college2"></div>
+		</div>
+		<div class="col-sm">
+			<div id="dob2"></div>
+		</div>
+		<div class="col-sm">
+			<div id="years-pro2"></div>
+		</div>
+		<div class="col-sm">
+			<div id="weight2"></div>
+		</div>
+		<div class="col-sm">
+			<div id="height2"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="name3"></div>
+		</div>
+		<div class="col-sm">
+			<div id="number3"></div>
+		</div>
+		<div class="col-sm">
+			<div id="position3"></div>
+		</div>
+		<div class="col-sm">
+			<div id="college3"></div>
+		</div>
+		<div class="col-sm">
+			<div id="dob3"></div>
+		</div>
+		<div class="col-sm">
+			<div id="years-pro3"></div>
+		</div>
+		<div class="col-sm">
+			<div id="weight3"></div>
+		</div>
+		<div class="col-sm">
+			<div id="height3"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="name4"></div>
+		</div>
+		<div class="col-sm">
+			<div id="number4"></div>
+		</div>
+		<div class="col-sm">
+			<div id="position4"></div>
+		</div>
+		<div class="col-sm">
+			<div id="college4"></div>
+		</div>
+		<div class="col-sm">
+			<div id="dob4"></div>
+		</div>
+		<div class="col-sm">
+			<div id="years-pro4"></div>
+		</div>
+		<div class="col-sm">
+			<div id="weight4"></div>
+		</div>
+		<div class="col-sm">
+			<div id="height4"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="name5"></div>
+		</div>
+		<div class="col-sm">
+			<div id="number5"></div>
+		</div>
+		<div class="col-sm">
+			<div id="position5"></div>
+		</div>
+		<div class="col-sm">
+			<div id="college5"></div>
+		</div>
+		<div class="col-sm">
+			<div id="dob5"></div>
+		</div>
+		<div class="col-sm">
+			<div id="years-pro5"></div>
+		</div>
+		<div class="col-sm">
+			<div id="weight5"></div>
+		</div>
+		<div class="col-sm">
+			<div id="height5"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="name6"></div>
+		</div>
+		<div class="col-sm">
+			<div id="number6"></div>
+		</div>
+		<div class="col-sm">
+			<div id="position6"></div>
+		</div>
+		<div class="col-sm">
+			<div id="college6"></div>
+		</div>
+		<div class="col-sm">
+			<div id="dob6"></div>
+		</div>
+		<div class="col-sm">
+			<div id="years-pro6"></div>
+		</div>
+		<div class="col-sm">
+			<div id="weight6"></div>
+		</div>
+		<div class="col-sm">
+			<div id="height6"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="name7"></div>
+		</div>
+		<div class="col-sm">
+			<div id="number7"></div>
+		</div>
+		<div class="col-sm">
+			<div id="position7"></div>
+		</div>
+		<div class="col-sm">
+			<div id="college7"></div>
+		</div>
+		<div class="col-sm">
+			<div id="dob7"></div>
+		</div>
+		<div class="col-sm">
+			<div id="years-pro7"></div>
+		</div>
+		<div class="col-sm">
+			<div id="weight7"></div>
+		</div>
+		<div class="col-sm">
+			<div id="height7"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="name8"></div>
+		</div>
+		<div class="col-sm">
+			<div id="number8"></div>
+		</div>
+		<div class="col-sm">
+			<div id="position8"></div>
+		</div>
+		<div class="col-sm">
+			<div id="college8"></div>
+		</div>
+		<div class="col-sm">
+			<div id="dob8"></div>
+		</div>
+		<div class="col-sm">
+			<div id="years-pro8"></div>
+		</div>
+		<div class="col-sm">
+			<div id="weight8"></div>
+		</div>
+		<div class="col-sm">
+			<div id="height8"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="name9"></div>
+		</div>
+		<div class="col-sm">
+			<div id="number9"></div>
+		</div>
+		<div class="col-sm">
+			<div id="position9"></div>
+		</div>
+		<div class="col-sm">
+			<div id="college9"></div>
+		</div>
+		<div class="col-sm">
+			<div id="dob9"></div>
+		</div>
+		<div class="col-sm">
+			<div id="years-pro9"></div>
+		</div>
+		<div class="col-sm">
+			<div id="weight9"></div>
+		</div>
+		<div class="col-sm">
+			<div id="height9"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="name10"></div>
+		</div>
+		<div class="col-sm">
+			<div id="number10"></div>
+		</div>
+		<div class="col-sm">
+			<div id="position10"></div>
+		</div>
+		<div class="col-sm">
+			<div id="college10"></div>
+		</div>
+		<div class="col-sm">
+			<div id="dob10"></div>
+		</div>
+		<div class="col-sm">
+			<div id="years-pro10"></div>
+		</div>
+		<div class="col-sm">
+			<div id="weight10"></div>
+		</div>
+		<div class="col-sm">
+			<div id="height10"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="name11"></div>
+		</div>
+		<div class="col-sm">
+			<div id="number11"></div>
+		</div>
+		<div class="col-sm">
+			<div id="position11"></div>
+		</div>
+		<div class="col-sm">
+			<div id="college11"></div>
+		</div>
+		<div class="col-sm">
+			<div id="dob11"></div>
+		</div>
+		<div class="col-sm">
+			<div id="years-pro11"></div>
+		</div>
+		<div class="col-sm">
+			<div id="weight11"></div>
+		</div>
+		<div class="col-sm">
+			<div id="height11"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="name12"></div>
+		</div>
+		<div class="col-sm">
+			<div id="number12"></div>
+		</div>
+		<div class="col-sm">
+			<div id="position12"></div>
+		</div>
+		<div class="col-sm">
+			<div id="college12"></div>
+		</div>
+		<div class="col-sm">
+			<div id="dob12"></div>
+		</div>
+		<div class="col-sm">
+			<div id="years-pro12"></div>
+		</div>
+		<div class="col-sm">
+			<div id="weight12"></div>
+		</div>
+		<div class="col-sm">
+			<div id="height12"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="name13"></div>
+		</div>
+		<div class="col-sm">
+			<div id="number13"></div>
+		</div>
+		<div class="col-sm">
+			<div id="position13"></div>
+		</div>
+		<div class="col-sm">
+			<div id="college13"></div>
+		</div>
+		<div class="col-sm">
+			<div id="dob13"></div>
+		</div>
+		<div class="col-sm">
+			<div id="years-pro13"></div>
+		</div>
+		<div class="col-sm">
+			<div id="weight13"></div>
+		</div>
+		<div class="col-sm">
+			<div id="height13"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="name14"></div>
+		</div>
+		<div class="col-sm">
+			<div id="number14"></div>
+		</div>
+		<div class="col-sm">
+			<div id="position14"></div>
+		</div>
+		<div class="col-sm">
+			<div id="college14"></div>
+		</div>
+		<div class="col-sm">
+			<div id="dob14"></div>
+		</div>
+		<div class="col-sm">
+			<div id="years-pro14"></div>
+		</div>
+		<div class="col-sm">
+			<div id="weight14"></div>
+		</div>
+		<div class="col-sm">
+			<div id="height14"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="name15"></div>
+		</div>
+		<div class="col-sm">
+			<div id="number15"></div>
+		</div>
+		<div class="col-sm">
+			<div id="position15"></div>
+		</div>
+		<div class="col-sm">
+			<div id="college15"></div>
+		</div>
+		<div class="col-sm">
+			<div id="dob15"></div>
+		</div>
+		<div class="col-sm">
+			<div id="years-pro15"></div>
+		</div>
+		<div class="col-sm">
+			<div id="weight15"></div>
+		</div>
+		<div class="col-sm">
+			<div id="height15"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="name16"></div>
+		</div>
+		<div class="col-sm">
+			<div id="number16"></div>
+		</div>
+		<div class="col-sm">
+			<div id="position16"></div>
+		</div>
+		<div class="col-sm">
+			<div id="college16"></div>
+		</div>
+		<div class="col-sm">
+			<div id="dob16"></div>
+		</div>
+		<div class="col-sm">
+			<div id="years-pro16"></div>
+		</div>
+		<div class="col-sm">
+			<div id="weight16"></div>
+		</div>
+		<div class="col-sm">
+			<div id="height16"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="name17"></div>
+		</div>
+		<div class="col-sm">
+			<div id="number17"></div>
+		</div>
+		<div class="col-sm">
+			<div id="position17"></div>
+		</div>
+		<div class="col-sm">
+			<div id="college17"></div>
+		</div>
+		<div class="col-sm">
+			<div id="dob17"></div>
+		</div>
+		<div class="col-sm">
+			<div id="years-pro17"></div>
+		</div>
+		<div class="col-sm">
+			<div id="weight17"></div>
+		</div>
+		<div class="col-sm">
+			<div id="height17"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="name18"></div>
+		</div>
+		<div class="col-sm">
+			<div id="number18"></div>
+		</div>
+		<div class="col-sm">
+			<div id="position18"></div>
+		</div>
+		<div class="col-sm">
+			<div id="college18"></div>
+		</div>
+		<div class="col-sm">
+			<div id="dob18"></div>
+		</div>
+		<div class="col-sm">
+			<div id="years-pro18"></div>
+		</div>
+		<div class="col-sm">
+			<div id="weight18"></div>
+		</div>
+		<div class="col-sm">
+			<div id="height18"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="name19"></div>
+		</div>
+		<div class="col-sm">
+			<div id="number19"></div>
+		</div>
+		<div class="col-sm">
+			<div id="position19"></div>
+		</div>
+		<div class="col-sm">
+			<div id="college19"></div>
+		</div>
+		<div class="col-sm">
+			<div id="dob19"></div>
+		</div>
+		<div class="col-sm">
+			<div id="years-pro19"></div>
+		</div>
+		<div class="col-sm">
+			<div id="weight19"></div>
+		</div>
+		<div class="col-sm">
+			<div id="height19"></div>
+		</div>
+	</div>
+
+</div>
+</body>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</html>

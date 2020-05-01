@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel='stylesheet' href='css/styles.css'>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+	</script>
+	<script type="module" src="js/2017season.js"></script>
+	<meta charset="UTF-8">
+	<title>Bulls 2017-18</title>
+</head>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+				<a class="nav-link nav-red" style="color: #B42729;" href="index.html">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link nav-red" style="color: #B42729;" href="bulls2015.html">2015-16 Season<span class="sr-only"></span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link nav-red" style="color: #B42729;" href="bulls2016.html">2016-17 Season<span class="sr-only"></span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link nav-red" style="color: black;" href="bulls2017.html">2017-18 Season<span class="sr-only"></span></a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" style="color: #B42729" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					2018-19 Season
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: white;">
+					<a class="nav-link nav-red" style="color: #B42729;" href="bulls2018.html">2018-19 Season<span class="sr-only"></span></a>
+					<a class="nav-link nav-red" style="color: #B42729;" href="bulls2018-standings.html">2018-19 Standings<span class="sr-only"></span></a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" style="color: #B42729" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					2019-20 Season
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: white;">
+					<a class="nav-link nav-red" style="color: #B42729;" href="bulls2019.html">2019-20 Season<span class="sr-only"></span></a>
+					<a class="nav-link nav-red" style="color: #B42729;" href="bulls2019-standings.html">2019-20 Standings<span class="sr-only"></span></a>
+				</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link nav-red" style="color: #B42729;" href="current-roster.html">Current Roster<span class="sr-only"></span></a>
+			</li>
+		</ul>
+		<img width="50px" height="50px" style="float: right;" src="https://upload.wikimedia.org/wikipedia/fr/thumb/d/d1/Bulls_de_Chicago_logo.svg/1200px-Bulls_de_Chicago_logo.svg.png">
+	</div>
+</nav>
+<body>
+<div class="standings-container">
+	<h3 class="standings-title">Chicago Bulls 2017-18 Schedule</h3>
+</div>
+<div class="header">The Chicago Bulls ended the season with the record of 27-55. They ending the season 13th in the Eastern Conference.</div>
+<div class="container">
+	<div class="row">
+		<div class="col-sm">
+			<div id="game1ht" class="team-name"></div>
+			<img id="game1htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game1score" class="score"></div><div id="date1"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game1vt" class="team-name"></div>
+			<img id="game1vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game2ht" class="team-name"></div>
+			<img id="game2htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game2score" class="score"></div><div id="date2"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game2vt" class="team-name"></div>
+			<img id="game2vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game3ht" class="team-name"></div>
+			<img id="game3htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game3score" class="score"></div><div id="date3"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game3vt" class="team-name"></div>
+			<img id="game3vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game4ht" class="team-name"></div>
+			<img id="game4htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game4score" class="score"></div><div id="date4"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game4vt" class="team-name"></div>
+			<img id="game4vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game5ht" class="team-name"></div>
+			<img id="game5htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game5score" class="score"></div><div id="date5"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game5vt" class="team-name"></div>
+			<img id="game5vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game6ht" class="team-name"></div>
+			<img id="game6htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game6score" class="score"></div><div id="date6"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game6vt" class="team-name"></div>
+			<img id="game6vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game7ht" class="team-name"></div>
+			<img id="game7htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game7score" class="score"></div><div id="date7"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game7vt" class="team-name"></div>
+			<img id="game7vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game8ht" class="team-name"></div>
+			<img id="game8htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game8score" class="score"></div><div id="date8"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game8vt" class="team-name"></div>
+			<img id="game8vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game9ht" class="team-name"></div>
+			<img id="game9htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game9score" class="score"></div><div id="date9"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game9vt" class="team-name"></div>
+			<img id="game9vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game10ht" class="team-name"></div>
+			<img id="game10htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game10score" class="score"></div><div id="date10"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game10vt" class="team-name"></div>
+			<img id="game10vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game11ht" class="team-name"></div>
+			<img id="game11htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game11score" class="score"></div><div id="date11"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game11vt" class="team-name"></div>
+			<img id="game11vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game12ht" class="team-name"></div>
+			<img id="game12htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game12score" class="score"></div><div id="date12"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game12vt" class="team-name"></div>
+			<img id="game12vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game13ht" class="team-name"></div>
+			<img id="game13htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game13score" class="score"></div><div id="date13"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game13vt" class="team-name"></div>
+			<img id="game13vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game14ht" class="team-name"></div>
+			<img id="game14htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game14score" class="score"></div><div id="date14"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game14vt" class="team-name"></div>
+			<img id="game14vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game15ht" class="team-name"></div>
+			<img id="game15htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game15score" class="score"></div><div id="date15"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game15vt" class="team-name"></div>
+			<img id="game15vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game16ht" class="team-name"></div>
+			<img id="game16htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game16score" class="score"></div><div id="date16"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game16vt" class="team-name"></div>
+			<img id="game16vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game17ht" class="team-name"></div>
+			<img id="game17htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game17score" class="score"></div><div id="date17"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game17vt" class="team-name"></div>
+			<img id="game17vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game18ht" class="team-name"></div>
+			<img id="game18htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game18score" class="score"></div><div id="date18"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game18vt" class="team-name"></div>
+			<img id="game18vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game19ht" class="team-name"></div>
+			<img id="game19htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game19score" class="score"></div><div id="date19"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game19vt" class="team-name"></div>
+			<img id="game19vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game20ht" class="team-name"></div>
+			<img id="game20htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game20score" class="score"></div><div id="date20"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game20vt" class="team-name"></div>
+			<img id="game20vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game21ht" class="team-name"></div>
+			<img id="game21htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game21score" class="score"></div><div id="date21"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game21vt" class="team-name"></div>
+			<img id="game21vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game22ht" class="team-name"></div>
+			<img id="game22htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game22score" class="score"></div><div id="date22"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game22vt" class="team-name"></div>
+			<img id="game22vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game23ht" class="team-name"></div>
+			<img id="game23htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game23score" class="score"></div><div id="date23"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game23vt" class="team-name"></div>
+			<img id="game23vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game24ht" class="team-name"></div>
+			<img id="game24htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game24score" class="score"></div><div id="date24"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game24vt" class="team-name"></div>
+			<img id="game24vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game25ht" class="team-name"></div>
+			<img id="game25htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game25score" class="score"></div><div id="date25"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game25vt" class="team-name"></div>
+			<img id="game25vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game26ht" class="team-name"></div>
+			<img id="game26htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game26score" class="score"></div><div id="date26"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game26vt" class="team-name"></div>
+			<img id="game26vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game27ht" class="team-name"></div>
+			<img id="game27htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game27score" class="score"></div><div id="date27"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game27vt" class="team-name"></div>
+			<img id="game27vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game28ht" class="team-name"></div>
+			<img id="game28htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game28score" class="score"></div><div id="date28"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game28vt" class="team-name"></div>
+			<img id="game28vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game29ht" class="team-name"></div>
+			<img id="game29htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game29score" class="score"></div><div id="date29"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game29vt" class="team-name"></div>
+			<img id="game29vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game30ht" class="team-name"></div>
+			<img id="game30htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game30score" class="score"></div><div id="date30"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game30vt" class="team-name"></div>
+			<img id="game30vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game31ht" class="team-name"></div>
+			<img id="game31htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game31score" class="score"></div><div id="date31"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game31vt" class="team-name"></div>
+			<img id="game31vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game32ht" class="team-name"></div>
+			<img id="game32htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game32score" class="score"></div><div id="date32"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game32vt" class="team-name"></div>
+			<img id="game32vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game33ht" class="team-name"></div>
+			<img id="game33htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game33score" class="score"></div><div id="date33"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game33vt" class="team-name"></div>
+			<img id="game33vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game34ht" class="team-name"></div>
+			<img id="game34htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game34score" class="score"></div><div id="date34"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game34vt" class="team-name"></div>
+			<img id="game34vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game35ht" class="team-name"></div>
+			<img id="game35htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game35score" class="score"></div><div id="date35"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game35vt" class="team-name"></div>
+			<img id="game35vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game36ht" class="team-name"></div>
+			<img id="game36htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game36score" class="score"></div><div id="date36"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game36vt" class="team-name"></div>
+			<img id="game36vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game37ht" class="team-name"></div>
+			<img id="game37htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game37score" class="score"></div><div id="date37"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game37vt" class="team-name"></div>
+			<img id="game37vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game38ht" class="team-name"></div>
+			<img id="game38htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game38score" class="score"></div><div id="date38"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game38vt" class="team-name"></div>
+			<img id="game38vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game39ht" class="team-name"></div>
+			<img id="game39htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game39score" class="score"></div><div id="date39"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game39vt" class="team-name"></div>
+			<img id="game39vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game40ht" class="team-name"></div>
+			<img id="game40htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game40score" class="score"></div><div id="date40"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game40vt" class="team-name"></div>
+			<img id="game40vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game41ht" class="team-name"></div>
+			<img id="game41htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game41score" class="score"></div><div id="date41"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game41vt" class="team-name"></div>
+			<img id="game41vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game42ht" class="team-name"></div>
+			<img id="game42htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game42score" class="score"></div><div id="date42"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game42vt" class="team-name"></div>
+			<img id="game42vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game43ht" class="team-name"></div>
+			<img id="game43htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game43score" class="score"></div><div id="date43"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game43vt" class="team-name"></div>
+			<img id="game43vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game44ht" class="team-name"></div>
+			<img id="game44htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game44score" class="score"></div><div id="date44"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game44vt" class="team-name"></div>
+			<img id="game44vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game45ht" class="team-name"></div>
+			<img id="game45htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game45score" class="score"></div><div id="date45"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game45vt" class="team-name"></div>
+			<img id="game45vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game46ht" class="team-name"></div>
+			<img id="game46htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game46score" class="score"></div><div id="date46"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game46vt" class="team-name"></div>
+			<img id="game46vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game47ht" class="team-name"></div>
+			<img id="game47htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game47score" class="score"></div><div id="date47"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game47vt" class="team-name"></div>
+			<img id="game47vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game48ht" class="team-name"></div>
+			<img id="game48htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game48score" class="score"></div><div id="date48"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game48vt" class="team-name"></div>
+			<img id="game48vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game49ht" class="team-name"></div>
+			<img id="game49htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game49score" class="score"></div><div id="date49"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game49vt" class="team-name"></div>
+			<img id="game49vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game50ht" class="team-name"></div>
+			<img id="game50htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game50score" class="score"></div><div id="date50"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game50vt" class="team-name"></div>
+			<img id="game50vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game51ht" class="team-name"></div>
+			<img id="game51htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game51score" class="score"></div><div id="date51"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game51vt" class="team-name"></div>
+			<img id="game51vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game52ht" class="team-name"></div>
+			<img id="game52htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game52score" class="score"></div><div id="date52"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game52vt" class="team-name"></div>
+			<img id="game52vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game53ht" class="team-name"></div>
+			<img id="game53htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game53score" class="score"></div><div id="date53"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game53vt" class="team-name"></div>
+			<img id="game53vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game54ht" class="team-name"></div>
+			<img id="game54htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game54score" class="score"></div><div id="date54"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game54vt" class="team-name"></div>
+			<img id="game54vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game55ht" class="team-name"></div>
+			<img id="game55htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game55score" class="score"></div><div id="date55"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game55vt" class="team-name"></div>
+			<img id="game55vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game56ht" class="team-name"></div>
+			<img id="game56htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game56score" class="score"></div><div id="date56"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game56vt" class="team-name"></div>
+			<img id="game56vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game57ht" class="team-name"></div>
+			<img id="game57htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game57score" class="score"></div><div id="date57"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game57vt" class="team-name"></div>
+			<img id="game57vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game58ht" class="team-name"></div>
+			<img id="game58htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game58score" class="score"></div><div id="date58"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game58vt" class="team-name"></div>
+			<img id="game58vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game59ht" class="team-name"></div>
+			<img id="game59htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game59score" class="score"></div><div id="date59"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game59vt" class="team-name"></div>
+			<img id="game59vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game60ht" class="team-name"></div>
+			<img id="game60htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game60score" class="score"></div><div id="date60"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game60vt" class="team-name"></div>
+			<img id="game60vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game61ht" class="team-name"></div>
+			<img id="game61htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game61score" class="score"></div><div id="date61"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game61vt" class="team-name"></div>
+			<img id="game61vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game62ht" class="team-name"></div>
+			<img id="game62htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game62score" class="score"></div><div id="date62"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game62vt" class="team-name"></div>
+			<img id="game62vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game63ht" class="team-name"></div>
+			<img id="game63htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game63score" class="score"></div><div id="date63"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game63vt" class="team-name"></div>
+			<img id="game63vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game64ht" class="team-name"></div>
+			<img id="game64htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game64score" class="score"></div><div id="date64"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game64vt" class="team-name"></div>
+			<img id="game64vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game65ht" class="team-name"></div>
+			<img id="game65htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game65score" class="score"></div><div id="date65"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game65vt" class="team-name"></div>
+			<img id="game65vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game66ht" class="team-name"></div>
+			<img id="game66htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game66score" class="score"></div><div id="date66"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game66vt" class="team-name"></div>
+			<img id="game66vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game67ht" class="team-name"></div>
+			<img id="game67htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game67score" class="score"></div><div id="date67"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game67vt" class="team-name"></div>
+			<img id="game67vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game68ht" class="team-name"></div>
+			<img id="game68htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game68score" class="score"></div><div id="date68"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game68vt" class="team-name"></div>
+			<img id="game68vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game69ht" class="team-name"></div>
+			<img id="game69htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game69score" class="score"></div><div id="date69"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game69vt" class="team-name"></div>
+			<img id="game69vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game70ht" class="team-name"></div>
+			<img id="game70htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game70score" class="score"></div><div id="date70"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game70vt" class="team-name"></div>
+			<img id="game70vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game71ht" class="team-name"></div>
+			<img id="game71htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game71score" class="score"></div><div id="date71"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game71vt" class="team-name"></div>
+			<img id="game71vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game72ht" class="team-name"></div>
+			<img id="game72htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game72score" class="score"></div><div id="date72"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game72vt" class="team-name"></div>
+			<img id="game72vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game73ht" class="team-name"></div>
+			<img id="game73htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game73score" class="score"></div><div id="date73"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game73vt" class="team-name"></div>
+			<img id="game73vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game74ht" class="team-name"></div>
+			<img id="game74htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game74score" class="score"></div><div id="date74"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game74vt" class="team-name"></div>
+			<img id="game74vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game75ht" class="team-name"></div>
+			<img id="game75htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game75score" class="score"></div><div id="date75"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game75vt" class="team-name"></div>
+			<img id="game75vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game76ht" class="team-name"></div>
+			<img id="game76htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game76score" class="score"></div><div id="date76"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game76vt" class="team-name"></div>
+			<img id="game76vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game77ht" class="team-name"></div>
+			<img id="game77htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game77score" class="score"></div><div id="date77"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game77vt" class="team-name"></div>
+			<img id="game77vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game78ht" class="team-name"></div>
+			<img id="game78htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game78score" class="score"></div><div id="date78"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game78vt" class="team-name"></div>
+			<img id="game78vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game79ht" class="team-name"></div>
+			<img id="game79htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game79score" class="score"></div><div id="date79"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game79vt" class="team-name"></div>
+			<img id="game79vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game80ht" class="team-name"></div>
+			<img id="game80htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game80score" class="score"></div><div id="date80"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game80vt" class="team-name"></div>
+			<img id="game80vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game81ht" class="team-name"></div>
+			<img id="game81htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game81score" class="score"></div><div id="date81"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game81vt" class="team-name"></div>
+			<img id="game81vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game82ht" class="team-name"></div>
+			<img id="game82htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game82score" class="score"></div><div id="date82"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game82vt" class="team-name"></div>
+			<img id="game82vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<div id="game83ht" class="team-name"></div>
+			<img id="game83htl" width="50px" height="50px" src="">
+		</div>
+		<div class="col-sm">
+			<div id="game83score" class="score"></div><div id="date83"></div>
+		</div>
+		<div class="col-sm">
+			<div id="game83vt" class="team-name"></div>
+			<img id="game83vtl" width="50px" height="50px" src="">
+		</div>
+	</div>
+</div>
+</body>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel='stylesheet' href='css/styles.css'>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+	</script>
+	<script type="module" src="js/2018season.js"></script>
+	<meta charset="UTF-8">
+	<title>Bulls 2018-19 Standings</title>
+</head>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+				<a class="nav-link nav-red" style="color: #B42729;" href="index.html">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link nav-red" style="color: #B42729;" href="bulls2015.html">2015-16 Season<span class="sr-only"></span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link nav-red" style="color: #B42729;" href="bulls2016.html">2016-17 Season<span class="sr-only"></span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link nav-red" style="color: #B42729;" href="bulls2017.html">2017-18 Season<span class="sr-only"></span></a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" style="color: black" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					2018-19 Season
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: white;">
+					<a class="nav-link nav-red" style="color: #B42729;" href="bulls2018.html">2018-19 Season<span class="sr-only"></span></a>
+					<a class="nav-link nav-red" style="color: black;" href="bulls2018-standings.html">2018-19 Standings<span class="sr-only"></span></a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" style="color: #B42729" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					2019-20 Season
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: white;">
+					<a class="nav-link nav-red" style="color: #B42729;" href="bulls2019.html">2019-20 Season<span class="sr-only"></span></a>
+					<a class="nav-link nav-red" style="color: #B42729;" href="bulls2019-standings.html">2019-20 Standings<span class="sr-only"></span></a>
+				</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link nav-red" style="color: #B42729;" href="current-roster.html">Current Roster<span class="sr-only"></span></a>
+			</li>
+		</ul>
+		<img width="50px" height="50px" style="float: right;" src="https://upload.wikimedia.org/wikipedia/fr/thumb/d/d1/Bulls_de_Chicago_logo.svg/1200px-Bulls_de_Chicago_logo.svg.png">
+	</div>
+</nav>
+<body>
+<div class="standings-container">
+<h3 class="standings-title">2018-19 Eastern Conference Standings</h3>
+</div>
+
+<div class="standings">
+<div class="row">
+	<div class="col-sm">
+		<div class="heading" id="team">Team</div>
+	</div>
+	<div class="col-sm">
+		<div class="heading" id="team-wins">Wins</div>
+	</div>
+	<div class="col-sm">
+		<div class="heading" id="team-loses">Loses</div>
+	</div>
+	<div class="col-sm">
+		<div class="heading" id="team-win-percentage">Win Percentage</div>
+	</div>
+	<div class="col-sm">
+		<div class="heading" id="team-games-behind">Games Behind</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm">
+		<div id="team1"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team1-wins"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team1-loses"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team1-win-percentage"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team1-games-behind"></div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm">
+		<div id="team2"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team2-wins"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team2-loses"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team2-win-percentage"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team2-games-behind"></div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-sm">
+		<div id="team3"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team3-wins"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team3-loses"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team3-win-percentage"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team3-games-behind"></div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-sm">
+		<div id="team4"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team4-wins"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team4-loses"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team4-win-percentage"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team4-games-behind"></div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-sm">
+		<div id="team5"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team5-wins"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team5-loses"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team5-win-percentage"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team5-games-behind"></div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-sm">
+		<div id="team6"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team6-wins"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team6-loses"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team6-win-percentage"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team6-games-behind"></div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-sm">
+		<div id="team7"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team7-wins"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team7-loses"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team7-win-percentage"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team7-games-behind"></div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-sm">
+		<div id="team8"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team8-wins"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team8-loses"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team8-win-percentage"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team8-games-behind"></div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-sm">
+		<div id="team9"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team9-wins"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team9-loses"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team9-win-percentage"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team9-games-behind"></div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-sm">
+		<div id="team10"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team10-wins"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team10-loses"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team10-win-percentage"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team10-games-behind"></div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-sm">
+		<div id="team11"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team11-wins"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team11-loses"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team11-win-percentage"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team11-games-behind"></div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-sm">
+		<div id="team12"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team12-wins"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team12-loses"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team12-win-percentage"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team12-games-behind"></div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-sm">
+		<div id="team13"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team13-wins"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team13-loses"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team13-win-percentage"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team13-games-behind"></div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm">
+		<div id="team14"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team14-wins"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team14-loses"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team14-win-percentage"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team14-games-behind"></div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-sm">
+		<div id="team15"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team15-wins"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team15-loses"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team15-win-percentage"></div>
+	</div>
+	<div class="col-sm">
+		<div id="team15-games-behind"></div>
+	</div>
+</div>
+</div>
+</body>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</html>
